@@ -1,0 +1,319 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #999
+	opacity: 1
+
+*:-moz-placeholder
+	color: #999
+	opacity: 1
+
+*::-moz-placeholder
+	color: #999
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #999
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+.title
+	display: inline-block
+	font-family: "Comfortaa", $helvetica
+	text-transform: uppercase
+	font-size: em(32px)
+	margin-top: 70px
+	margin-bottom: 40px
+
+.block-4
+	position: relative
+	background-color: #1abc9c
+	color: #333
+	text-align: center
+	i
+		background: -webkit-linear-gradient(#F972AA, #126B8C)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		font-size: em(140px)
+	ol
+		padding-bottom: 70px
+		padding-left: 0
+		li
+			list-style-type: none
+	h1
+		color: #fff
+	.block-4-text
+		font-size: em(24px)
+		text-transform: uppercase
+		font-weight: 600
+		padding: 50px 10px
+		line-height: 1.2em
+
+.block-5
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		height: 100%
+		width: 40%
+		background-color: #ccffff
+	background-color: #1abc9c
+	text-align: center
+	h1
+		font-size: em(30px)
+		text-transform: uppercase
+		color: #fff
+	ul
+		padding-left: 0
+		li
+			list-style-type: none
+			display: inline-block
+			padding: 0 10px
+			padding-bottom: 30px
+			margin-top: auto
+			margin-bottom: auto
+			&:last-child
+				font-family: "Russo One", $helvetica
+				font-size: em(24px)
+				text-transform: uppercase
+			img
+				width: 80%
+	.block-5-left
+		background-color: #1abc9c
+	.block-5-right
+		z-index: 99
+		background-color: #ccffff
+		position: relative
+		h1
+			color: #000
+		&:before
+			border-top: 243px solid #1abc9c
+			border-bottom: 0 solid transparent
+			border-right: 120px solid transparent
+			content: ""
+			left: 0
+			position: absolute
+			top: 0
+
+.block-6
+	position: relative
+	text-align: center
+	background-color: #ccffff
+	h1
+		color: #333
+		margin-bottom: 80px
+	img
+		display: inline-block
+		vertical-align: middle
+	.what-we-do-item
+		text-transform: uppercase
+		margin-bottom: 60px
+		h3
+			font-weight: 600
+			font-size: em(22px)
+		p
+			font-weight: 300
+			font-size: em(16px)
+			padding: 0 15px
+	.button
+		width: 40%
+		text-align: center
+		display: inline-block
+		font-size: em(30px)
+		color: #fff
+		margin-top: 50px
+		margin-bottom: 100px
+
+.block-7
+	position: relative
+	text-align: center
+	background-color: #e8e8e8
+	h2
+		font-size: em(20px)
+		text-transform: uppercase
+		font-family: "Comfortaa", $helvetica
+	.subtitle
+		font-size: em(22px)
+		color: #333
+		padding: 0 80px
+		margin-top: -20px
+		line-height: 1.2em
+	.isoft-item
+		margin-top: 125px
+		margin-bottom: 80px
+		img
+			margin-bottom: 70px
+		p
+			font-size: em(22px)
+			color: #333
+			padding: 0 15px
+
+.block-8
+	position: relative
+	text-align: center
+	background-image: url("../img/career-bg.jpg")
+	background-size: cover
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(255,255,255,.7)
+	p
+		font-size: em(18px)
+		color: #000
+		font-weight: 300
+		text-transform: uppercase
+		line-height: 1.3em
+	.title
+		margin-bottom: 60px
+
+	.button
+		margin-top: 60px
+		width: 80%
+		margin-left: auto
+		margin-right: auto
+		color: #fff
+		font-size: em(22px)
+		margin-bottom: 70px
+
+.block-9
+	position: relative
+	text-align: center
+	background-image: url("../img/contact-bg.jpg")
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(255,255,255,.85)
+	p
+		line-height: 1.2em
+		font-size: em(24px)
+		margin-bottom: 65px
+		span
+			font-weight: bold
+		a
+			color: #5da680
+			text-decoration: underline
+	form
+		font-size: em(24px)
+		text-align: left
+		input,select,textarea
+			width: 100%
+			border: 1px solid #ccc
+			margin-bottom: 20px
+			border-radius: 3px
+			padding-left: 10px
+		select
+			height: 42px
+			background-color: #e1e1e1
+		textarea
+			height: 120px
+		.button
+			color: #fff
+			font-size: em(16px)
+			margin-bottom: 70px
+
+.cmn-toggle-bottom
+	display: block
+	position: absolute
+	bottom: 30px
+	right: 20px
+	overflow: hidden
+	margin: 0
+	padding: 0
+	width: 40px
+	height: 40px
+	font-size: 0
+	text-indent: -9999px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	box-shadow: none
+	border-radius: none
+	border: none
+	cursor: pointer
+	-webkit-transition: background 0.3s
+	transition: background 0.3s
+.cmn-toggle-bottom:focus
+	outline: none
+.cmn-toggle-bottom span
+	display: block
+	position: absolute
+	top: ($button-height / 2) - ($bar-thickness / 2)
+	left: $button-pad
+	right: $button-pad
+	height: $bar-thickness
+	background: rgb(255,255,255)
+	border-radius: 3px
+.cmn-toggle-bottom span::before,
+.cmn-toggle-bottom span::after
+	position: absolute
+	display: block
+	left: 0
+	width: 100%
+	height: $bar-thickness
+	background-color: #fff
+	border-radius: 3px
+	content: ""
+.cmn-toggle-bottom span::before
+	top: -(($button-height / 2) - ($bar-thickness / 2) - $button-pad)
+.cmn-toggle-bottom span::after
+	bottom: -(($button-height / 2) - ($bar-thickness / 2) - $button-pad)
+.cmn-toggle-bottom__rot 
+	background-color: rgb(27,54,81)
+.cmn-toggle-bottom__rot span
+	transition: transform $button-trans-delay
+.cmn-toggle-bottom__rot.active 
+	border-radius: 5px
+.cmn-toggle-bottom__rot.active span
+	transform: rotate(90deg)
+
+.footer
+	position: relative
+	height: 120px
+	background-color: #1b3651
+
+	a
+		color: #fff
+		&:hover, &:focus
+			color: #90fcac
+	.social
+		margin-top: 30px
+		list-style-type: none
+		padding-left: 0
+		li
+			display: inline-block
+			font-size: em(42px)
+			margin-right: 25px
+	.bottom-menu
+		margin-top: 46px
+		text-align: right
+		ul
+			list-style-type: none
+			li
+				display: inline-block
+				text-transform: uppercase
+				font-size: em(18px)
+				margin-right: 25px
+
+//ALWAYS END
+@import "media"

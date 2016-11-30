@@ -1,0 +1,1 @@
+{"B:\\Landings\\Reship\\gulpfile.js": {"tasks": {"watch": {"dependencies": "", "name": "watch"}, "styles": {"dependencies": "", "name": "styles"}, "scripts": {"dependencies": "", "name": "scripts"}, "default": {"dependencies": "", "name": "default"}, "browser-sync": {"dependencies": "", "name": "browser-sync"}}, "sha1": "249d396d33d6668441e69550512799767fff5706"}}
